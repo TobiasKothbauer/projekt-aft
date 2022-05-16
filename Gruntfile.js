@@ -10,9 +10,21 @@ module.exports = function(grunt) {
                     'public/main.css': 'assets/scss/main.scss',       // 'destination': 'source'
                 }
             }
+        },
+        htmlmin: {                              // Task
+            dist: {                            // Target
+                options: {                       // Target options
+                    collapseWhitespace: true,
+                    style: 'expanded'
+                },
+                files: {                         // Dictionary of files
+                    './index.html': 'src/index.html',       // 'destination': 'source'
+                }
+            }
         }
     });
 
     grunt.loadNpmTasks('grunt-contrib-sass');
-    grunt.registerTask('default', ['sass']);
+    grunt.loadNpmTasks('grunt-contrib-htmlmin');
+    grunt.registerTask('default', ['sass, htmlmin']);
 };
