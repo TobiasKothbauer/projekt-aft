@@ -9,5 +9,138 @@
 </head>
 <body class="is-preload">
 
+<!-- Header -->
+<header id="header">
+    <a href="./index.html" class="header-logo">
+        <h1>TOBIAS KOTHBAUER</h1>
+    </a>
+    <nav>
+        <button class="hamburger" id="hamburger">
+            <i class="fas fa-bars"></i>
+        </button>
+        <ul id="nav-ul" class="nav-ul">
+            <li><a href="./galerie.html">MEINE PROJEKTE</a></li>
+            <li><a href="#intro">NEWS</a></li>
+            <li><a href="./kontakt.html">KONTAKT</a></li>
+            <li><a href="#two">LOGIN</a></li>
+            <li><a href="#work">DE | EN</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Contact -->
+<section id="contact" class="main style3 secondary">
+    <div class="content">
+        <header>
+            <h2>Schreib mir!</h2>
+            <p>Du hast irgendwelche Fragen an mich oder willst mit mir einfach in Kontakt treten?<br>
+                Dann füll dieses Kontaktformular aus, dauert nur 1-2 Minuten. <br>
+                Ich freu mich schon von dir zu hören!</p>
+        </header>
+        <div class="box">
+            <form method="post" action="#">
+                <div class="fields">
+
+                    <!-- Schritt 1 -->
+                    <div class="field half">
+                        <label for="cars"></label>
+                        <select id="cars" name="cars">
+                            <option value="" disabled selected>Wähle dein Interessensgebiet aus</option>
+                            <option value="saab">Fotografie</option>
+                            <option value="fiat">Webentwicklung</option>
+                            <option value="audi">Webdesign</option>
+                        </select>
+                    </div>
+
+                    <div class="field half newsletter-flex-row">
+                        <div class="newsletter-flex-column">
+                            <p class="text-input">Newsletter-Anmeldung:</p>
+                            <div class="newsletter-flex-row">
+                                <div class="newsletter-horizontal">
+                                    <input type="radio" id="ja" name="Newsletter" value="Ja" class="newsletter-margin-right-small">
+                                    <label for="ja" class="newsletter-margin-right-large"> Ja</label>
+                                </div>
+                                <div class="newsletter-horizontal">
+                                    <input type="radio" id="nein" name="Newsletter" value="Nein" class="newsletter-margin-right-small">
+                                    <label for="nein"> Nein</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Schritt 2 -->
+                    <div class="field half">
+                        <label for="vname"></label>
+                        <input type="text" id="vname" name="vname" placeholder="Vorname" />
+                    </div>
+
+                    <div class="field half">
+                        <label for="nname"></label>
+                        <input type="text" id="nname" name="nname" placeholder="Nachname" />
+                    </div>
+
+                    <div class="field half">
+                        <label for="email"></label>
+                        <input type="email" id="email" name="email" placeholder="Email" />
+                    </div>
+
+                    <div class="field half">
+                        <label for="strasse"></label>
+                        <input type="text" id="strasse" name="strasse" placeholder="Straße" />
+                    </div>
+
+                    <div class="field half">
+                        <label for="plz"></label>
+                        <input type="text" id="plz" name="plz" placeholder="PLZ" />
+                    </div>
+
+                    <div class="field half">
+                        <label for="ort"></label>
+                        <input type="text" id="ort" name="ort" placeholder="Ort" />
+                    </div>
+
+                    <div class="field half">
+                        <label for="tel"></label>
+                        <input type="text" id="tel" name="tel" placeholder="Telefonnummer" />
+                    </div>
+
+                    <div class="field">
+                        <label for="message"></label>
+                        <textarea id="message" name="message" placeholder="Message" rows="6"></textarea>
+                    </div>
+                </div>
+
+
+                <ul class="actions special">
+                    <li><input type="submit" value="Absenden" /></li>
+                </ul>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer id="footer">
+
+    <!-- Icons -->
+    <ul class="icons">
+        <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+        <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+        <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+    </ul>
+
+</footer>
+
+<!-- Scripts -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.poptrox.min.js"></script>
+<script src="assets/js/jquery.scrolly.min.js"></script>
+<script src="assets/js/jquery.scrollex.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
+
 </body>
 </html>
