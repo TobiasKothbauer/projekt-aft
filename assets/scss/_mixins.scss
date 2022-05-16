@@ -1,0 +1,7 @@
+@mixin ease-in-out ($time) {
+  -moz-transition: background-color $time ease-in-out;
+  -webkit-transition: background-color $time ease-in-out;
+  -ms-transition: background-color $time ease-in-out;
+  transition: background-color $time ease-in-out;
+}
+
