@@ -1,4 +1,5 @@
-
+@import "components";
+@import "mixins";
 
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,900");
 @import url("fontawesome-all.min.css");
@@ -654,16 +655,14 @@ p, ul, ol, dl, table {
 input[type="button"],
 input[type="submit"],
 input[type="reset"],
+.btn,
 .button,
 button {
   -moz-appearance: none;
   -webkit-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  -moz-transition: background-color 0.2s ease-in-out;
-  -webkit-transition: background-color 0.2s ease-in-out;
-  -ms-transition: background-color 0.2s ease-in-out;
-  transition: background-color 0.2s ease-in-out;
+  @include ease-in-out(0.2s);
   background-color: #98c593;
   border: 0;
   border-radius: 3.5em;
@@ -719,6 +718,7 @@ button.anchored {
 input[type="button"]:hover,
 input[type="submit"]:hover,
 input[type="reset"]:hover,
+.btn:hover,
 .button:hover,
 button:hover {
   background-color: #a8cea4;
@@ -913,6 +913,12 @@ textarea {
 }
 
 :-ms-input-placeholder {
+  opacity: 0.375;
+}
+
+::placeholder, .text-input {
+  color: #39454b;
+  font-weight: 700;
   opacity: 0.375;
 }
 
@@ -2365,12 +2371,6 @@ body.is-touch .main {
   transform: translateY(100%);
 }
 
-::placeholder, .text-input {
-  color: #39454b;
-  font-weight: 700;
-  opacity: 0.375;
-}
-
 .text-input {
   margin-bottom: 0.5em;
 }
@@ -2380,7 +2380,7 @@ select {
   font-weight: 700;
 }
 
-input[type="submit"], .einloggen {
+input[type="submit"], .einloggen, .btn {
   font-weight: 700;
 }
 

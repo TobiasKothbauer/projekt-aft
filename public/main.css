@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,900");
 @import url("fontawesome-all.min.css");
+.cancel {
+  background-color: red !important;
+}
+
 /*
 	Big Picture by HTML5 UP
 	html5up.net | @ajlkn
@@ -577,6 +581,8 @@ p, ul, ol, dl, table {
 input[type=button],
 input[type=submit],
 input[type=reset],
+.btn,
+.cancel,
 .button,
 button {
   -moz-appearance: none;
@@ -642,6 +648,8 @@ button.anchored {
 input[type=button]:hover,
 input[type=submit]:hover,
 input[type=reset]:hover,
+.btn:hover,
+.cancel:hover,
 .button:hover,
 button:hover {
   background-color: #a8cea4;
@@ -832,6 +840,12 @@ textarea {
 }
 
 :-ms-input-placeholder {
+  opacity: 0.375;
+}
+
+::placeholder, .text-input {
+  color: #39454b;
+  font-weight: 700;
   opacity: 0.375;
 }
 
@@ -2229,12 +2243,6 @@ body.is-touch .main {
   transform: translateY(100%);
 }
 
-::placeholder, .text-input {
-  color: #39454b;
-  font-weight: 700;
-  opacity: 0.375;
-}
-
 .text-input {
   margin-bottom: 0.5em;
 }
@@ -2244,7 +2252,7 @@ select {
   font-weight: 700;
 }
 
-input[type=submit], .einloggen {
+input[type=submit], .einloggen, .btn, .cancel {
   font-weight: 700;
 }
 
