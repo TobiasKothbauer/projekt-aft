@@ -21,10 +21,21 @@ module.exports = function(grunt) {
                     './index.html': 'src/index.html',       // 'destination': 'source'
                 }
             }
+        },
+        imagemin: {
+            dynamic: {
+                files: [{
+                    expand: true,
+                    cwd: 'assets/images/',
+                    src: ['**/*.{png,jpg,gif}'], // if it finds those endings..
+                    dest: 'public/images'
+                }]
+            }
         }
     });
 
     grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-contrib-htmlmin');
-    grunt.registerTask('default', ['sass, htmlmin']);
+    grunt.loadNpmTasks('grunt-contrib-imagemin');
+    grunt.registerTask('default', ['sass, htmlmin, imagemin']);
 };
