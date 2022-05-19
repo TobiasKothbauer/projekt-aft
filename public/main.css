@@ -4,6 +4,10 @@
   background-color: red !important;
 }
 
+.cancel:hover {
+  background-color: indianred !important;
+}
+
 /*
 	Big Picture by HTML5 UP
 	html5up.net | @ajlkn
@@ -583,6 +587,7 @@ input[type=submit],
 input[type=reset],
 .btn,
 .cancel,
+.cancel:hover,
 .button,
 button {
   -moz-appearance: none;
@@ -2252,7 +2257,7 @@ select {
   font-weight: 700;
 }
 
-input[type=submit], .einloggen, .btn, .cancel {
+input[type=submit], .einloggen, .btn, .cancel, .cancel:hover {
   font-weight: 700;
 }
 

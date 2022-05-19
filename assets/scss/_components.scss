@@ -2,3 +2,8 @@
   @extend .btn;
   background-color: red !important;
 }
+
+.cancel:hover {
+  @extend .btn;
+  background-color: indianred  !important;
+}
