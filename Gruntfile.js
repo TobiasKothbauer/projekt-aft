@@ -37,5 +37,5 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-contrib-htmlmin');
     grunt.loadNpmTasks('grunt-contrib-imagemin');
-    grunt.registerTask('default', ['sass, htmlmin, imagemin']);
+    grunt.registerTask('default', ['sass', 'htmlmin', 'imagemin']);
 };
