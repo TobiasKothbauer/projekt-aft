@@ -1,6 +1,7 @@
 .cancel {
   @extend .btn;
   background-color: red !important;
+  max-width: 220px;
 }
 
 .cancel:hover {
